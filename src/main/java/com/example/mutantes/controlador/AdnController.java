@@ -61,11 +61,11 @@ public class AdnController {
     @GetMapping("/mutant")
     public CollectionModel<EntityModel<Adn>> all() {
 
-	List<EntityModel<Adn>> employees = repositorio.findAll().stream() //
+	List<EntityModel<Adn>> adns = repositorio.findAll().stream() //
 		.map(adnAssembler::toModel) //
 		.collect(Collectors.toList());
 
-	return CollectionModel.of(employees, 
+	return CollectionModel.of(adns, 
 		linkTo(methodOn(AdnController.class).all()).withSelfRel(),
 		linkTo(methodOn(AdnController.class).stats()).withRel("stats"));
     }
