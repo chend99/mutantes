@@ -34,3 +34,11 @@ El formato del ADN tiene que ser un array de String que represente una tabla NxN
 
 ### Errores conocidos
 - Faltan algunas validaciones al crear un nuevo ADN
+
+### Tecnologías usadas
+- Java 8
+- Maven
+- Spring Boot
+- JPA
+- H2 y PostgreSQL
+
