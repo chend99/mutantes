@@ -20,6 +20,7 @@ Se admiten los métodos `GET`, `POST`, `PUT` y `DELETE`:
 | `GET` | `/mutant/{id}` | Trae un ADN específico |
 | `PUT` | `/mutant/{id}` | Actualiza ADN específico |
 | `DELETE` | `/mutant/{id}` | Borra ADN específico |
+| `GET` | `/stats` | Trae las estadísticas de cuantos mutantes hay |
 
 ### Formato del ADN
 El formato del ADN tiene que ser un array de String que represente una tabla NxN, donde los Strings pueden ser (A,T,C,G) las cuales representa cada base nitrogenada del ADN.
