@@ -109,7 +109,7 @@ public class AdnController {
 	Adn updatedAdn = repositorio.findById(id) //
 		.map(adn -> {
 		    adn.setAdn(newAdn.getAdn());
-		    adnService.setMutant(newAdn);
+		    adnService.setMutant(adn);
 		    return repositorio.save(adn);
 		}).orElseGet(() -> {
 		    newAdn.setId(id);
